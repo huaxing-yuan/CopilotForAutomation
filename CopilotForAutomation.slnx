@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Information/">
+    <File Path="README.md" />
+  </Folder>
   <Project Path="HomeInsurance.LinearScripting/HomeInsurance.LinearScripting.csproj" />
   <Project Path="HomeInsurance.Reqnroll.Tests/HomeInsurance.Reqnroll.Tests.csproj" />
   <Project Path="HomeInsurrance.KeywordDriven.Tests/HomeInsurrance.KeywordDriven.Tests.csproj" Id="fe18aabb-863e-467c-ad77-4995549789b9" />
