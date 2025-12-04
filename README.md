@@ -6,7 +6,6 @@ Ce dépôt a pour objectif de démontrer l’utilisation de GitHub Copilot avec le fr
 ## Linear Scripting
 Ce projet illustre un usage basique de Copilot pour écrire des scripts simples d’automatisation.
 
-
 ## ReqNRoll.Tests
 
 Ce projet permet d’automatiser un parcours de souscription d’un produit d’assurance habitation en utilisant l’approche Gherkin.
