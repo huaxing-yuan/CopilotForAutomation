@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestData\HomeTestSuite.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\HomeTestSuite.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AxaFrance.WebEngine.Runner" Version="3.25.273.1" />
     <PackageReference Include="AxaFrance.WebEngine.Web" Version="3.25.273.1" />
   </ItemGroup>

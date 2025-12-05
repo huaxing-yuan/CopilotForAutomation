@@ -20,6 +20,7 @@ Vous allez instantier une nouvelle instance de driver au debut de chaque scenari
 
 ElementDescription permet de décrire comment trouver un objet dans l'application.
 Pour une page Web, on utilise la classe WebElementDescription. Vous pouvez combiner un ou plusieurs attributs pour identifier l'élément de façon sûre et unique.
+Utiliser moins d'attribute que possible (permet d'identifier un element de facon unique)
 
 Vous allez déclarer un page model par page dans le dossier "PageModels" et utiliser le page model dans le script.
 
@@ -41,7 +42,7 @@ La classe WebElementDescription possède les propriétés (avec get; set;) suivante
  * Attributes.Value : la valeur de l’attribut.
 
 
-# Exemple d'un WebElementDescirption en C# :
+# Exemple d'un WebElementDescirption en C# si utiliser individuellement :
 ```csharp
 using AxaFrance.WebEngine.Web;
 using AxaFrance.WebEngine;
@@ -87,39 +88,39 @@ WebElementDescription expose des methodes suivant pour interagir avec l'élement:
 
 # Ensuite, Organiser les élements d'une page dans un Page Model
 WebElementDescription peut être utilisé pour créer des classes Page Model.
-
-Exemple : CalculatorPage est le modèle utilisé pour tester une application Android, qui hérite de la classe PageModel.
-Pour tester des applications Web, ajoutez des WebElementDescription à la place de AppElementDescription.
+Chaque WebElementDescription est un propriété (get, set).
+Exemple : CalculatorPage est le modèle utilisé pour tester une application calculatrice, qui hérite de la classe PageModel.
 ```csharp
 using OpenQA.Selenium;
 using AxaFrance.WebEngine.MobileApp;
-
-public class CalculatorPage : PageModel
-{
-    public AppElementDescription Digit0 {get;set;} = new AppElementDescription
+namespace MyApplication.PageModels {
+    public class CalculatorPage : PageModel
     {
-        Id = "com.Android.calculator2:id/digit_0"
-    };
+        public WebElementDescription Digit0 {get; set;} = new WebElementDescription
+        {
+            Id = "digit0"
+        };
 
-    public AppElementDescription Equals {get;set;} = new AppElementDescription
-    {
-        Id = "com.Android.calculator2:id/eq"
-    };
+        public WebElementDescription Equals {get; set;} = new WebElementDescription
+        {
+            Id = "symbol_equal"
+        };
 
-    public AppElementDescription Multiply {get;set;} = new AppElementDescription
-    {
-        ClassName = "Android.widget.Button",
-        AccessbilityId = "multiply"
-    };
+        public WebElementDescription Multiply {get; set;} = new WebElementDescription
+        {
+            ClassName = "action",
+            Name = "Multiply"
+        };
 
-    public CalculatorPage(WebDriver driver) : base(driver)
-    {
+        public CalculatorPage(WebDriver driver) : base(driver)
+        {
+        }
     }
 }
 ```
 
-En mode Page, nous utilisons WebDriver et non pas IWebDriver.
-
+En mode PageModel, nous utilisons WebDriver et non pas IWebDriver.
+Pas besoin de passer le driver au constructeur de chaque WebElementDescription, car le PageModel s'en charge.
 ----------------------------------------
 
 Si tout est clair, dites-moi OK, on va commencer à automatiser le test !
@@ -131,7 +132,21 @@ Prompt 2
 Implementer le scenario: Login Step Definitions se trouve ici: #.....
 voici le html du page Login: 
 ```html
-coller le html du page login ici
+<div class="align-self-center container" style="margin: 50px auto 50px auto; padding: 20px; border: 2px solid; border-radius: 20px">
+        <h1 class="h1 text-success">Login</h1>
+        <div style="margin: 5px">
+            <span style="width: 100px; display:inline-block">Login: </span><input type="text" name="login">
+        </div>
+        <div style="margin: 5px">
+            <span style="width: 100px; display: inline-block">Password: </span><input type="password" name="password">
+        </div>
+        <div class="alert-danger" id="errorMessage" style="display: none">
+        </div>
+        <div>
+            <button>Forget password</button>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
 ```
 
 

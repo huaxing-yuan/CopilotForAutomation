@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestSuiteData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.axa.fr/WebEngine/2022">
+  <TestData>
+    <TestName>Appt_T4_Intermediaire</TestName>
+    <Data>
+      <Variable><Name>URL_RECETTE</Name><Value>https://webengine-test.azurewebsites.net/home-insurance/</Value></Variable>
+      <Variable><Name>User</Name><Value>C038974</Value></Variable>
+      <Variable><Name>EncPassword</Name><Value>QAk+Z533JAHco+LXdkdcNQ==</Value></Variable>
+      <Variable><Name>ProspectId</Name><Value>C038974</Value></Variable>
+      <Variable><Name>StreetNumber</Name><Value>23</Value></Variable>
+      <Variable><Name>StreetName</Name><Value>Avenue de l'Opera</Value></Variable>
+      <Variable><Name>City</Name><Value>Paris</Value></Variable>
+      <Variable><Name>PostCode</Name><Value>75001</Value></Variable>
+      <Variable><Name>Region</Name><Value>Ile-de-France</Value></Variable>
+      <Variable><Name>Country</Name><Value>fr</Value></Variable>
+      <Variable><Name>HomeType</Name><Value>apartment</Value></Variable>
+      <Variable><Name>TotalFloors</Name><Value>4to7</Value></Variable>
+      <Variable><Name>MyFloors</Name><Value>4</Value></Variable>
+      <Variable><Name>Elevator</Name><Value>yes</Value></Variable>
+      <Variable><Name>Rooms</Name><Value>3</Value></Variable>
+      <Variable><Name>Surface</Name><Value>72</Value></Variable>
+    </Data>
+  </TestData>
+  <TestData>
+    <TestName>Maison_5P_Monaco</TestName>
+    <Data>
+      <Variable><Name>URL_RECETTE</Name><Value>https://webengine-test.azurewebsites.net/home-insurance/</Value></Variable>
+      <Variable><Name>User</Name><Value>C123456</Value></Variable>
+      <Variable><Name>EncPassword</Name><Value>QAk+Z533JAHco+LXdkdcNQ==</Value></Variable>
+      <Variable><Name>ProspectId</Name><Value>C123456</Value></Variable>
+      <Variable><Name>StreetNumber</Name><Value>7</Value></Variable>
+      <Variable><Name>StreetName</Name><Value>Rue du Port</Value></Variable>
+      <Variable><Name>City</Name><Value>Monaco</Value></Variable>
+      <Variable><Name>PostCode</Name><Value>98000</Value></Variable>
+      <Variable><Name>Region</Name><Value>Monaco</Value></Variable>
+      <Variable><Name>Country</Name><Value>ma</Value></Variable>
+      <Variable><Name>HomeType</Name><Value>house</Value></Variable>
+      <Variable><Name>HouseFloors</Name><Value>2</Value></Variable>
+      <Variable><Name>SurfaceBackyard</Name><Value>50</Value></Variable>
+      <Variable><Name>Pool</Name><Value>no</Value></Variable>
+      <Variable><Name>Rooms</Name><Value>5</Value></Variable>
+      <Variable><Name>Surface</Name><Value>120</Value></Variable>
+    </Data>
+  </TestData>
+</TestSuiteData>

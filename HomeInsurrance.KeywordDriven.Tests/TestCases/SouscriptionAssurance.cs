@@ -10,7 +10,10 @@ namespace HomeInsurrance.KeywordDriven.Tests.TestCases
         public SouscriptionAssurance()
         {
             TestSteps = new TestStep[] {
-                // test steps will be filled according to implementation
+                new TestStep { Action = nameof(Actions.Login) },
+                new TestStep { Action = nameof(Actions.Prospect) },
+                new TestStep { Action = nameof(Actions.Form_HomeDetails) }
+                // Ajouter ici les étapes suivantes : Antecedents, OfferAndOptions, etc.
             };
         }
     }
