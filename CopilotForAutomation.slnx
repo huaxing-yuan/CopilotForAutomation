@@ -2,6 +2,7 @@
   <Folder Name="/Information/">
     <File Path="prompt-atelier1.md" />
     <File Path="prompt-atelier2.md" />
+    <File Path="prompt-datadriven.md" />
     <File Path="README.md" />
   </Folder>
   <Project Path="HomeInsurance.LinearScripting/HomeInsurance.LinearScripting.csproj" />

@@ -24,7 +24,7 @@ Pour une page Web, on utilise la classe WebElementDescription. Vous pouvez combi
 Vous allez déclarer un page model par page dans le dossier "PageModels" et utiliser le page model dans le script.
 
 
-# WEBELEMENTDESCRIPTION POUR LES ÉLÉMENTS SUR UNE PAGE WEB
+# WebElementDescription Pour Les Élements sur une page web
 
 La classe WebElementDescription possède les propriétés (avec get; set;) suivantes :
 
@@ -41,7 +41,7 @@ La classe WebElementDescription possède les propriétés (avec get; set;) suivante
  * Attributes.Value : la valeur de l’attribut.
 
 
-# EXEMPLE D'UN WEBELEMENTDESCRIPTION EN C# :
+# Exemple d'un WebElementDescirption en C# :
 ```csharp
 using AxaFrance.WebEngine.Web;
 using AxaFrance.WebEngine;
@@ -85,7 +85,7 @@ WebElementDescription expose des methodes suivant pour interagir avec l'élement:
 * CheckByValue(string) - Checks an RadioButton from a given RadioGroup (used for radio button group, <input type="radio"> elements)
 
 
-# ENSUITE, ORGANISER LES ÉLÉMENTS D'UNE PAGE DANS UN PAGE MODEL
+# Ensuite, Organiser les élements d'une page dans un Page Model
 WebElementDescription peut être utilisé pour créer des classes Page Model.
 
 Exemple : CalculatorPage est le modèle utilisé pour tester une application Android, qui hérite de la classe PageModel.
