@@ -18,8 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AxaFrance.WebEngine.ReportViewer" Version="3.25.273.1" />
     <PackageReference Include="AxaFrance.WebEngine.Runner" Version="3.25.273.1" />
     <PackageReference Include="AxaFrance.WebEngine.Web" Version="3.25.273.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3650.58" />
   </ItemGroup>
 
 </Project>
